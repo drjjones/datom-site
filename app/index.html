@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DATOM — Research Intelligence</title>
+    <link rel="icon" type="image/svg+xml" href="/datom-site/app/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/datom-site/app/assets/index-qnN5HZa4.js"></script>
+    <link rel="modulepreload" crossorigin href="/datom-site/app/assets/vendor-D6afILek.js">
+    <link rel="modulepreload" crossorigin href="/datom-site/app/assets/auth-DuXNtqBc.js">
+    <link rel="stylesheet" crossorigin href="/datom-site/app/assets/index-CH2t_ttd.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Polyfill Node.js `global` for amazon-cognito-identity-js in the browser
+      if (typeof global === 'undefined') { window.global = window; }
+      // GitHub Pages SPA redirect: restore path encoded by 404.html
+      (function() {
+        var p = new URLSearchParams(window.location.search).get('p');
+        if (p) {
+          window.history.replaceState(null, '', '/app' + p);
+        }
+      })();
+    </script>
+  </body>
+</html>
