@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <script>
+      // GitHub Pages SPA fallback:
+      // Redirect /datom-site/app/* routes to app/index.html with the path as a query param
+      var path = window.location.pathname;
+      var prefix = '/datom-site/app';
+      if (path.startsWith(prefix)) {
+        var rest = path.slice(prefix.length) || '/';
+        var search = window.location.search ? '&' + window.location.search.slice(1) : '';
+        window.location.replace(prefix + '/?p=' + encodeURIComponent(rest) + search);
+      } else {
+        // Non-app 404 — redirect to main site
+        window.location.replace('/datom-site/');
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
